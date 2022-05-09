@@ -1,3 +1,9 @@
+<?php
+include "inc/bdd.php";
+include "inc/fonction.php";
+
+?>
+
 <?php 
 
 ?>
