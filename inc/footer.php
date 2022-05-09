@@ -35,7 +35,7 @@
           </div>
         </div>
         <p class="txt-center txt-light">
-          &copy; 2022 - La Wom'Art -Mayssam Bouazza
+          &copy; 2022 - La Wom'Art -Mayssam Bouazza Karim.A Yoan.D Yanis.M
         </p>
       </div>
     </footer>
