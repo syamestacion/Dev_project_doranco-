@@ -45,6 +45,10 @@
             <a href="mymy.html" title="Go to Mymy">Mymy</a>
             <a href="constance.html" title="Go to Constance">Constance</a>
             <a href="news.html" title="Go to News">News</a>
+            <a href="news.html" title="Go to Inscription">Inscription</a>
+            <a href="news.html" title="Go to Connexion">Connexion</a>
+            <a href="news.html" title="Go to Profil">Profil</a>
+            <
           </nav>
         </div>
       </div>
