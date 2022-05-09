@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Womart</title>
+	
+	<meta name="description" content="le site de la wom'art">	
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+	
+	<link rel="shortcut icon" href="img/Asset-5.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<body onLoad="startScroll()" onUnLoad="stopScroll()">
+	<div class="header">
+		<div class="wrap">
+			<div class="grid">
+				<header class="logo col-d-3">
+					<a href="index.html" title="Retour à la page d'accueil">
+						<img src="img/Asset-4.svg" alt="WomArt" width="200" height="">
+					</a>
+					
+				 </header> 	
+				
+				<nav class="menu col-d-9">
+					<a  href="Robine2.html" title="Go to Robine">Robine</a>
+					<a href="mymy.html" title="Go to Mymy">Mymy</a>
+					<a href="constance.html" title="Go to constance">Constance</a>
+					<a class="current" href="news.html" title="Go to news">News</a>
+				</nav> 
+			</div> 
+		</div>
+
+
+<form name="formScroll" >
+<p><input type="text" name="textScroll" style="font-family:  Baron Neue" size="60"></p>
+</form>
+	
+	
+<main>	
+
+
+	
+		
+					
+</main>
+	<footer >
+	
+	<div class="wrap">
+		<div class="grid">
+			<div class="col-t-6">
+				<div class="flex rs">
+					<a href="index.html">
+						<img  src="img/social-picto/Active/Facebook.png" alt="Logo" width="50"  >
+					</a>
+						  
+			        <a href="index.html">
+						<img  src="img/social-picto/Active/Instagram.png" alt="Logo"  width="50" >
+					</a>
+					<a href="index.html">
+						<img  src="img/social-picto/Active/Twitter.png" alt="Logo"  width="50" >
+					</a>
+				</div>
+			</div>
+			<div class="col-t-6 logo-footer">
+				<a href="../Mayssam Bouazza/womart/index.html">
+					<img  src="img/Asset-5.svg" alt="Logo" width="70" >
+				</a>
+			</div>
+		</div>
+		<p class="txt-center txt-light " >&copy; 2022 -  Site-Digital Campus-Mayssam Bouazza </p>
+	</div>	
+		
+	
+
+</footer>	
+		
+			
+	<!-- pour faire le retour haut de page -->
+
+	<i class="btn-menu far fa-bars fa-2x"></i> 
+	<!-- https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- lien du cdn https://developers.google.com/speed/libraries#jquery -->
+
+<script src="js/app.js"></script> <!-- lien pour notre dossier il faut créer un dossier js et un fichier app.js -->
+		<script LANGUAGE="JavaScript">
+<!--
+var texte = 'LA WONEWS COMING SoOn';
+var msg = '';
+//espace entre chaque répétition du texte
+var blanc = '          ';
+//nombre de répétition du texte, doit être >= 1
+var nbTexte = 8;
+
+for(i=0;i<nbTexte;i++)
+  msg += texte + blanc;
+
+var timerID = null;
+var delaiScroll = 100;
+
+function startScroll() {
+  document.formScroll.textScroll.value = msg;
+  window.status = msg;
+  msg = msg.substring(1, msg.length) + msg.substring(0, 1)
+  timerID = setTimeout("startScroll()", delaiScroll);
+}
+
+function stopScroll() {
+  clearTimeout(timerID);
+}
+//-->
+</script>
+		
+</body>
+			
+</html>
