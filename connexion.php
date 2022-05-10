@@ -7,7 +7,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'deconnexion' ){
     unset($_SESSION['user']);
     // foncrion qui permet de supprimer une variable de session a l index membre
     // session_destroy supprime la session entiere
-    header('location:connexion.php');
+    header('location:index.php');
 
 }
 if(internauteEstConnecte() ==true){
@@ -41,9 +41,6 @@ if($_POST){
        }else{
            $content .= '<div class="alert alert-danger">Erreur nom utilisateur</div>';
        }
-
-
-
 
 
 }

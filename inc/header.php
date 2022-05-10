@@ -58,8 +58,16 @@ include "inc/function.php";
             
             <a href="news.html" title="Go to News">News</a>
             <a href="news.html" title="Go to Inscription">Inscription</a>
-            <a href="connexion.php" title="Go to Connexion">Connexion</a>
-            <a class="dropdown-item" href="connexion.php?action=deconnexion">Deconnexion</a>
+            <?php
+              if(internauteEstConnecte() == false){
+                echo '<a href="connexion.php" title="Go to Connexion">Connexion</a>';
+              }elseif(internauteEstConnecte() == true){
+                echo '<a class="dropdown-item" href="connexion.php?action=deconnexion">Deconnexion</a>';
+              }
+            
+            ?>
+            
+            
 
             <a href="news.html" title="Go to Profil">Profil</a>
             
