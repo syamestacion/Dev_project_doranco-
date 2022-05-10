@@ -60,7 +60,7 @@
       <article id="about" class="wrap mtl mbl bg-white">
         <div class="grid">
           <div class="offset-t-1 col-t-10 offset-d-0 col-d-5">
-            <video controls src="img/Womart.mp4"></video>
+            <video controls src="inc/img/Womart.mp4"></video>
           </div>
           <div class="col-d-7">
             <h2 class="txt-dark">Le Concept</h2>

@@ -1,7 +1,6 @@
 <?php
 include "inc/bdd.php";
-include "inc/fonction.php";
-
+include "inc/function.php";
 ?>
 
 <?php 
@@ -19,6 +18,7 @@ include "inc/fonction.php";
 
     <meta name="description" content="le site de la wom'art" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -47,14 +47,22 @@ include "inc/fonction.php";
           </header>
 
           <nav class="menu col-d-9">
-            <a href="Robine2.html" title="Go to Robine">Robine</a>
-            <a href="mymy.html" title="Go to Mymy">Mymy</a>
-            <a href="constance.html" title="Go to Constance">Constance</a>
+            <select class="form-select "  name="artiste">
+              <option>Decouvrez les artistes</option>
+              <option><a href="Robine2.html" title="Go to Robine">Robine</a></option>
+              <option><a href="mymy.html" title="Go to Mymy">Mymy</a></option>
+              <option><a href="constance.html" title="Go to Constance">Constance</a></option>
+            </select>
+            
+            
+            
             <a href="news.html" title="Go to News">News</a>
             <a href="news.html" title="Go to Inscription">Inscription</a>
-            <a href="news.html" title="Go to Connexion">Connexion</a>
+            <a href="connexion.php" title="Go to Connexion">Connexion</a>
+            <a class="dropdown-item" href="connexion.php?action=deconnexion">Deconnexion</a>
+
             <a href="news.html" title="Go to Profil">Profil</a>
-            <
+            
           </nav>
         </div>
       </div>
