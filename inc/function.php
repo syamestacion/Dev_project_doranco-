@@ -25,4 +25,8 @@ function estConnecteEtArtiste(){
         return false;
     }
 }
+
 ?>
+
+
+

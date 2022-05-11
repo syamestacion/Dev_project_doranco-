@@ -7,7 +7,11 @@ if(isset($_GET['action']) && $_GET['action'] == 'deconnexion' ){
     unset($_SESSION['user']);
     // foncrion qui permet de supprimer une variable de session a l index membre
     // session_destroy supprime la session entiere
-    header('location:connexion.php');
+
+ 
+
+    header('location:index.php');
+
 
 }
 if(internauteEstConnecte() ==true){
@@ -28,6 +32,7 @@ if($_POST){
            $_SESSION['user']['nom'] = $user['nom'];
            $_SESSION['user']['prenom'] = $user['prenom'];
            $_SESSION['user']['statut'] = $user['statut'];
+
            $_SESSION['user']['photo'] = $user['photo'];
            
            if($user['statut'] == 1){
@@ -39,16 +44,11 @@ if($_POST){
         else {
             header('location:profil.php');
         }
-           // header('location:profil.php');
-           //la fonction header() permet de rediriger vers une autre page
-         }else{
-           $content .= '<div class="alert alert-danger">Erreur de mot de passe</div>';
-         }
-         
-       }else{
-           $content .= '<div class="alert alert-danger">Erreur nom utilisateur</div>';
-       }
 
+           
+           if($membre['statut'] == 0){
+               header('location:profil.php');
+           }
 
 
 
