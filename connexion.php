@@ -30,9 +30,15 @@ if($_POST){
            $_SESSION['user']['statut'] = $user['statut'];
            $_SESSION['user']['photo'] = $user['photo'];
            
-           if($membre['statut'] == 0){
-               header('location:profil.php');
-           }
+           if($user['statut'] == 1){
+            header('location:administration.php');
+        }elseif($user['statut'] == 2){
+            header('location:artiste.php');
+
+        }
+        else {
+            header('location:profil.php');
+        }
            // header('location:profil.php');
            //la fonction header() permet de rediriger vers une autre page
          }else{
